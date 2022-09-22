@@ -12,7 +12,7 @@ function Popular() {
         if(check){
             setVeggie(JSON.parse(check))
         }else{
-            const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=4668d4e96ea04b7bb1277181973ab121&number=12&tags=vegetarian`);
+            const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=eb33bc42b1d64597bef8b39dc93eed56&number=12&tags=vegetarian`);
             const data = await api.json();
             localStorage.setItem("veggie",JSON.stringify(data.recipes))
             setVeggie(data.recipes);
